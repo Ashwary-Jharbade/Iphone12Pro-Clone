@@ -1,0 +1,34 @@
+{
+  "name": "iphone12pro-clone",
+  "version": "1.0.0",
+  "description": "Trying to clone componenets of iphone 12 pro web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass":"sass ./assets/styles/sass/main.scss ./assets/styles/css/main.css",
+    "watch-sass":"sass --watch ./assets/styles/sass/main.scss ./assets/styles/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwary-Jharbade/Iphone12Pro-Clone.git"
+  },
+  "keywords": [
+    "iphone12",
+    "iphone12Pro",
+    "clone",
+    "iphone",
+    "Pro",
+    "12Pro",
+    "12",
+    "iphone"
+  ],
+  "author": "Ashwary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashwary-Jharbade/Iphone12Pro-Clone/issues"
+  },
+  "homepage": "https://github.com/Ashwary-Jharbade/Iphone12Pro-Clone#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
