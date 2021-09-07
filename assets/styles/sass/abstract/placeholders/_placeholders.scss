@@ -1,0 +1,24 @@
+%flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+%flexColumn{
+    display: flex;
+    flex-direction: row;
+}
+
+%defaultStyle{
+    outline: none;
+    box-shadow: none;
+}
+
+%anchor{
+    outline: none;
+    text-decoration: none;
+    :hover{
+        outline: none;
+        text-decoration: none;
+    }
+}
+

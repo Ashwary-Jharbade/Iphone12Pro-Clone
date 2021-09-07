@@ -1,0 +1,4 @@
+@use "../../abstract/mixins/themeMixin" as mix;
+@use "../../base/variables" as *;
+
+@include mix.themable($defaultDark,$bg-black,$mid-gray,$white,$sky-blue,$sky-blue,$light-sky-blue,$sky-blue);

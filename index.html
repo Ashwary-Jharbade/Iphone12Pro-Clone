@@ -4,10 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="./assets/styles/css/main.css">
     <title>iPhone 12 Pro and iPhone 12 Pro Max - Apple</title>
+    <link rel="stylesheet" href="./assets/styles/css/reset.css">
+    <link rel="stylesheet" href="./assets/styles/css/utilities.css">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="product-bar">
+            <div class="product-bar-items product-toggler-container sm-block">
+                <button class="product-toggler" onclick="toggleBars()">
+                    <div class="line toggle-one line-one" id="bar-1"></div>
+                    <div class="line toggle-two line-two" id="bar-2"></div>
+                </button>
+            </div>
+            <div class="product-bar-items brand">
+                <a href=""><img src="./assets/img/appleLogoCrop.PNG" alt=""></a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">Store</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">Mac</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">iPad</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">iPhone</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">Watch</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">TV</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">Music</a>
+            </div>
+            <div class="product-bar-items font-300-15">
+                <a href="">Support</a>
+            </div>
+            <div class="product-bar-items font-300-16 search-icon">
+                <button><img src="./assets/img/searchCrop.PNG" alt=""></button>
+            </div>
+            <div class="product-bar-items font-300-16 shop-bag">
+                <a href=""><img src="./assets/img/shoppingBagCrop.PNG" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bar">
+        <div class="wrapper">
+            <div class="fixed-bar-content">
+                <div class="brand font-900-21">
+                    iPhone 12 Pro
+                </div>
+                <div class="fixed-bar-controls">
+                    <div class="fixed-bar-items sm-block">
+                        <span class="fa fa-angle-down font-500-16"></span>
+                    </div>
+                    <div class="fixed-bar-items font-500-12 lg-none">
+                        Overview
+                    </div>
+                    <div class="fixed-bar-items font-500-12 lg-none">
+                        <a href="">Tech Specs</a>
+                    </div>
+                    <div class="fixed-bar-items">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc-bar font-500-12">
+        <div class="desc">
+            Save on the newest iPhone with the latest carrier deals. Directly from Apple.</span>
+            <a href="" class="desc-link">Find your offer</a>
+            <span class="desc"><span class="fa fa-angle-right"></span>
+        </div>
+    </div>
+
+    <div style="height: 800px;"></div>
+    <script src="./assets/js/toggleBars.js"></script>
+    <script src="./assets/js/stickyNav.js"></script>
 </body>
 </html>

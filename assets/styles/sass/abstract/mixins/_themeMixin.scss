@@ -1,0 +1,20 @@
+@mixin themable($theme,$bodyBg,$topUpBar,$textWhite,$textBlue,$btnClassic,$btnGradient1,$btnGradient2){
+    .#{$theme}-theme{ 
+        background-color: $bodyBg;
+        .text-white{
+            color: $textWhite;
+        }
+        .text-blue{
+            color: $textBlue;
+        }
+        .top-up-bar{
+            background-color: $topUpBar;
+        }
+        .btn-classic{
+            background-color: $btnClassic;
+        }
+        .btn-gradient{
+            background-image: linear-gradient(to bottom,$btnGradient1,$btnGradient2);
+        }
+    }
+}

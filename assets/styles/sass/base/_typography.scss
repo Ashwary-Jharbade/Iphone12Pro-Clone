@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$sizes : 8, 10, 11, 12, 14, 16, 17, 21, 48;
+$weights : 300, 400, 500, 700, 900;
+
+@each $var1 in $weights {
+    @each $var2 in $sizes { 
+        .font-#{$var1}-#{$var2}{
+            font-size: #{$var2}px;
+            font-weight: $var1;
+            font-family: 'Roboto', sans-serif;;
+        }
+    }
+}   
