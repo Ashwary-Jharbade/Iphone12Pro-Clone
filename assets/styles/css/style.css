@@ -106,6 +106,8 @@ body{
     position: sticky;
     width: 100%;
     transition: all 1s;
+    z-index: 2;
+    background-color: var(--black);
 }
 
 .fixed-bar-content{
@@ -152,10 +154,23 @@ body{
 /* fixed bar styling end */
 
 /* description bar style */
+@keyframes slideTopToBottom {
+    0%{
+        top: -40px;
+    }
+    100%{
+       top: 0px;
+    }
+}
+
 .desc-bar{
+    position: relative;
     padding: 15px 20px;
     text-align: center;
     background-color: var(--dark-gray);
+    animation: slideTopToBottom 1s linear;
+    transition: all 2s;
+    z-index: 1;
 }
 
 .desc-bar .fa{
@@ -167,8 +182,9 @@ body{
 }
 
 .desc-link{
-    color: var(--link);
     padding: 0 1px;
+    color: var(--small-text-condensed-gray);
+    transition: all 2s;
 }
 /* description bar style end  */
 

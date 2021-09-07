@@ -5,6 +5,6 @@ window.addEventListener("scroll",()=>{
         obj.style.backgroundColor = "#1d1d1fb8";
     } else {
         let obj = document.querySelector(".fixed-bar");
-        obj.style.backgroundColor = "transparent";
+        obj.style.backgroundColor = "#000000";
     }
 })
