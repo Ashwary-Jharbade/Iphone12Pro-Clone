@@ -88,7 +88,7 @@ body{
 .search-icon button{
     cursor: pointer;
     background-color: transparent;
-    border: none;
+    border: none; 
     padding: 0;
     margin: 0;
 }
@@ -110,7 +110,9 @@ body{
     transition: all 2s;
     z-index: 5;
     background-color: var(--black);
+    backdrop-filter: blur(8px);
 }
+
 
 .fixed-bar-content{
     display: flex;
@@ -518,6 +520,10 @@ body{
        font-size: 35px;
        text-align: left;
     }
+
+    .bezel-section-wrapper{
+        margin-top: 100px;
+    }
 }
 
 /* Bezel section styles end */
@@ -607,6 +613,16 @@ body{
 
     .super-retina-specs-below-container{
         display: flex;
+    }
+}
+
+@media screen and (max-width:450px){
+    .super-retina-img video{
+        height:100%;
+    }
+
+    .super-retina-section{
+        margin-top: 100px;
     }
 }
 /* Super retina section styles end  */
@@ -855,6 +871,7 @@ body{
 .water-resistance-container{
     overflow: hidden;
     margin: 300px 0;
+    position: relative;
 }
 
 .water-resistance-img img{
@@ -863,10 +880,231 @@ body{
     left: 20%;
 }
 
+.water-resistance-text-container{
+    position: absolute;
+    width: 290px;
+    line-height: 1.2;
+    top: 60%;
+    left:15%;
+}
+
+.water-resistance-heading{
+    color: var(--white);
+}
+
+.water-resistance-text{
+    color: var(--medium-text-condensed-gray);
+    margin-top: 20px;
+}
+
+@media screen and (max-width:550px) {
+    .water-resistance-container{
+        margin: 200px 0 100px 0;
+    }
+    .water-resistance-text-container{
+        position: absolute;
+        width: 180px;
+        top: 40%;
+        left:10%;
+    }
+
+    .water-resistance-heading{
+        font-size: 30px;
+    }
+    
+    .water-resistance-text{
+       font-size: 18px;
+    }
+}
+
 @media screen and (max-width:450px) {
     .water-resistance-container{
-        margin: 0 0 100px 0;
+        margin: 200px 0 100px 0;
+    }
+    .water-resistance-text-container{
+        position: absolute;
+        width: 160px;
+        top: 40%;
+        left:10%;
+    }
+
+    .water-resistance-heading{
+        font-size: 25px;
+    }
+    
+    .water-resistance-text{
+       font-size: 14px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .water-resistance-container{
+        margin: 200px 0 100px 0;
+    }
+    .water-resistance-text-container{
+        position: absolute;
+        width: 140px;
+        top: 40%;
+        left:10%;
+    }
+
+    .water-resistance-heading{
+        font-size: 20px;
+    }
+    
+    .water-resistance-text{
+       font-size: 14px;
     }
 }
 
 /* Water resistance section style end */
+
+/* Finnish touches section style */
+
+.finnish-touches-wrapper{
+    margin: 50px 0 100px 0;
+}
+
+.finnish-touches-video{
+    display: flex;
+    justify-content: center;
+}
+
+.finnish-touches-video video{
+    height: 100%;
+    width: 80%;
+}
+
+.finnish-touches-heading{
+    color: var(--white);
+    text-align: center;
+    margin: 20px;
+}
+
+.finnish-touches-text{
+    color: var(--medium-text-condensed-gray);
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (max-width:550px) {
+    .finnish-touches-heading{
+        font-size: 35px;
+        text-align: left;
+    }
+    
+    .finnish-touches-text{
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .finnish-touches-heading{
+        font-size: 30px;
+    }
+    
+    .finnish-touches-text{
+        font-size: 16px;
+    }
+}
+
+/* Finnish touches section style end */
+
+/* Night recording video style */
+
+.night-recording-wrapper{
+    margin: 300px 0 200px 0;
+}
+
+.night-recording-container{}
+
+.night-recording-video{
+   position: relative;
+}
+
+.night-recording-video video{
+    width: 98vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+}
+
+.video-overlay{
+    width: 98vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    box-shadow: 4px 2px 48px 32px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 4px 2px 48px 32px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 4px 2px 48px 32px rgba(0,0,0,0.75) inset;
+}
+
+.night-recording-text-container{
+    margin: 50px;
+}
+
+.night-recording-heading{
+    color: var(--white);
+    text-align: center;
+}
+
+.night-recording-desc-text-container{
+    display: flex;
+    justify-content: center;
+}
+
+.night-recording-desc-text{
+    color: var(--medium-text-condensed-gray);
+    width: 50%;
+    text-align: center;
+    line-height: 1.2;
+    margin: 100px 0 100px 0;
+}
+
+.night-cam-spec-container{
+    display: flex;
+    justify-content: center;
+}
+
+.night-cam-spec-container hr{
+    border: 1px solid;
+    border-image: linear-gradient(#005e7f, #61b6cd) 1;
+}
+
+.night-cam-spec{
+    width: 50%;
+    text-align: center;
+    font-size: 45px;
+}   
+
+@media screen and (max-width:768px) {
+    .night-cam-spec{
+        width: 60%;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .night-recording-desc-text{
+        color: var(--medium-text-condensed-gray);
+        width: 100%;
+        text-align: left;
+        line-height: 1.2;
+        margin: 100px 0;
+        margin: 100px 20px 100px 20px;
+    }
+    .night-cam-spec{
+        width: 100%;
+        text-align: left;
+        font-size: 40px;
+        margin:0 20px;
+    }
+}
+
+
+/* Night recording video style end */
